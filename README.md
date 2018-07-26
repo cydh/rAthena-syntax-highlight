@@ -6,17 +6,17 @@ Notepad++ User-Defined Language for [rAthena](https://github.com/rathena/rathena
 ### Light theme
 If you are using light-themed background, example Default white
 1. Open your Notepad++ and go to the Language > Define your language... > Import
-2. Choose file [Notepadpp-rAthena-syntax-highlight.xml]https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/Notepadpp-rAthena-syntax-highlight.xml)
+2. Choose file [Notepadpp-rAthena-syntax-highlight.xml](https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/Notepadpp-rAthena-syntax-highlight.xml)
 
 ### Dark Theme - Vibrant Ink
 If you are using dark-themed background, in this case is **Vibrant Ink** (one of default dark themes in Notepad++)
 1. Open your Notepad++ and go to the Language > Define your language... > Import
-2. Choose file [rAthena-Vibrant-Ink.xml]https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/rAthena-Vibrant-Ink.xml)
+2. Choose file [rAthena-Vibrant-Ink.xml](https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/rAthena-Vibrant-Ink.xml)
 
 ### Dark Theme - VS2015-Dark
 If you are using dark-themed background, in this case is **VS2015-Dark** from [VS2015-Dark-Npp](https://github.com/Ludomancer/VS2015-Dark-Npp)
 1. Open your Notepad++ and go to the Language > Define your language... > Import
-2. Choose file [rAthena-Vibrant-Ink.xml]https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/rAthena-VS2015-Dark.xml)
+2. Choose file [rAthena-Vibrant-Ink.xml](https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/rAthena-VS2015-Dark.xml)
 
 
 ## Auto-completion

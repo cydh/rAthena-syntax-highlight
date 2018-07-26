@@ -1,24 +1,22 @@
-rAthena-syntax-highlight
-======================
+# rAthena-syntax-highlight
 
-Defined rAthena NPC scripting language for Notepad++.
+Notepad++ User-Defined Language for [rAthena](https://github.com/rathena/rathena) NPC scripting.
 
-## Keywords contents
- - NPC script commands.
- - Constants from db/const.txt
+## Add rAthena User-Defined Language
+### Light theme
+If you are using light-themed background, example Default white
+1. Open your Notepad++ and go to the Language > Define your language... > Import
+2. Choose file [Notepadpp-rAthena-syntax-highlight.xml]https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/Notepadpp-rAthena-syntax-highlight.xml)
 
+### Dark Theme - Vibrant Ink
+If you are using dark-themed background, in this case is **Vibrant Ink** (one of default dark themes in Notepad++)
+1. Open your Notepad++ and go to the Language > Define your language... > Import
+2. Choose file [rAthena-Vibrant-Ink.xml]https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/rAthena-Vibrant-Ink.xml)
 
-## How to add to Notepad++?
- - Open your Notepad++ and go to the Language > Define your language... > Import.
- - Use default styles in the Settings > Style Configurator > Select theme: Default.
- - Or you can download example style theme /themes/rAthenaWhite.xml and import it Settings < Import < Import style theme(s)....
- - Restart Notepad++ after changing language or styles.
-
-
-## Make a new style theme or edit existing one:
- - Make a new theme by copying stylers.xml in ( %APPDATA%\notepad++ ) and rename it for your theme and edit it.
- - Save it in ( %APPDATA%\notepad++\themes ) folder.
- - Restart Notepad++ after edit.
+### Dark Theme - VS2015-Dark
+If you are using dark-themed background, in this case is **VS2015-Dark** from [VS2015-Dark-Npp](https://github.com/Ludomancer/VS2015-Dark-Npp)
+1. Open your Notepad++ and go to the Language > Define your language... > Import
+2. Choose file [rAthena-Vibrant-Ink.xml]https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/rAthena-VS2015-Dark.xml)
 
 
 ## Auto-completion

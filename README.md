@@ -26,7 +26,7 @@ If you are using dark-themed background, in this case is **VS2015-Dark** from [V
 
 
 ## Auto-completion
- - Copy APIs/rathena.xml to Notepad++ installation folder APIs/rathena.
+ - Copy an APIs/[rathena.xml](https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/APIs/rathena.xml) file to Notepad++ installation folder `Path\to\Notepad++\plugins\APIs\`.
  - Open menu Settings > Preferences... > Auto-Completion tab, check "Enable auto-completion on each input".
  - Restart Notepad++.
 

@@ -1,11 +1,11 @@
 # rAthena-syntax-highlight
 
 Notepad++ User-Defined Language for [rAthena](https://github.com/rathena/rathena) NPC scripting.
-1. [Add rAthena User-Defined Language](#Add-rAthena-User-Defined-Language)
-2. [Auto-completion](#Auto-completion)
-3. [Sources](#Sources)
-4. [Groups of Keyword Lists](#Groups-of-Keyword-Lists)
-5. [Function List](#Function-List)
+1. [Add rAthena User-Defined Language](#add-rathena-user-defined-language)
+2. [Auto-completion](#auto-completion)
+3. [Sources](#sources)
+4. [Groups of Keyword Lists](#groups-of-keyword-lists)
+5. [Function List](#function-list)
 
 ## Add rAthena User-Defined Language
 You have to choose one of these options. If you want to change, remove the existing 'rathena' language
@@ -102,10 +102,10 @@ For mapflags, the Class-like group will have structure
 |- <mapflag2>
 ```
 ### Adding Function List
-1. Find functionList.xml in your Notepad++ installation directory (it can be under `C:\Program Files\Notepad++` or `%USER%\AppData\Roaming\Notepad++` depends on installation chose)
+1. Find functionList.xml in your Notepad++ installation directory (it can be under `C:\Program Files\Notepad++` or `%USER%\AppData\Roaming\Notepad++` depends on installation setup)
 2. **Better** just add the added lines from [rathena-functionList.diff](https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/NPPFunctionList/rathena-functionList.diff)
 3. If you don't have rAthena UDL, you can make dummy UDL. Make sure the UDL name is **rathena** lowercase.
-4. Restart Notepadd++
-5. Select the NPC/script file that you think as rAthena script, set the Languange > rathena.
+4. Restart Notepad++
+5. Select the NPC/script file that you think as rAthena script, set the Language > rathena.
 
 Happy editing.

@@ -1,6 +1,11 @@
 # rAthena-syntax-highlight
 
 Notepad++ User-Defined Language for [rAthena](https://github.com/rathena/rathena) NPC scripting.
+1. [Add rAthena User-Defined Language](#Add-rAthena-User-Defined-Language)
+2. [Auto-completion](#Auto-completion)
+3. [Sources](#Sources)
+4. [Groups of Keyword Lists](#Groups-of-Keyword-Lists)
+5. [Function List](#Function-List)
 
 ## Add rAthena User-Defined Language
 You have to choose one of these options. If you want to change, remove the existing 'rathena' language
@@ -68,5 +73,39 @@ Color: FF0080
 Color: FF0080
 * Flow control: if else switch case default break for do while function end return
 * Mapflags: Mapflag identifier from doc/mapflags.txt
+
+## Function List
+Script/NPC file that loaded with rAthena UDL will be parsed by NPP functionList as
+### NPC as Class
+NPC is assumed as Class, and as its functions/methods are
+* The NPC declaration itself is assumed as class constructor
+* In-script function is assumed as function/method
+* Label with prefix **On** is assumed as function/method
+### Standalone functions
+And these below are *'standalone'* declarations will be assumed as functions (like C that has no class) and will be *'grouped'* as Class-like
+* **monster**: declarations of permanent monster spawn script line
+* **warp**: declarations of warp script line
+* **warp2**: declarations of warp2 script line
+* **shop**: declarations of Shop NPC
+* **cashshop**: declarations of Cash Shop NPC
+* **marketshop**: declarations of Market Shop NPC
+* **pointshop**: declarations of Point Shop NPC
+* **itemshop**: declarations of Item Shop NPC
+### Mapflags Grouping
+For mapflags, the Class-like group will have structure
+```
+<map2>mapflag
+|- <mapflag1>
+|- <mapflag2>
+<map2>mapflag
+|- <mapflag1>
+|- <mapflag2>
+```
+### Adding Function List
+1. Find functionList.xml in your Notepad++ installation directory (it can be under `C:\Program Files\Notepad++` or `%USER%\AppData\Roaming\Notepad++` depends on installation chose)
+2. **Better** just add the added lines from [rathena-functionList.diff](https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/NPPFunctionList/rathena-functionList.diff)
+3. If you don't have rAthena UDL, you can make dummy UDL. Make sure the UDL name is **rathena** lowercase.
+4. Restart Notepadd++
+5. Select the NPC/script file that you think as rAthena script, set the Languange > rathena.
 
 Happy editing.

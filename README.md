@@ -23,7 +23,7 @@ If you are using dark-themed background, in this case is **Vibrant Ink** (one of
 If you are using dark-themed background, in this case is **VS2015-Dark** from [VS2015-Dark-Npp](https://github.com/cydh/VS2015-Dark-Npp/blob/cydh-devel/VS2015-Dark.xml)
 1. Open your Notepad++ and go to the Language > Define your language... > Import
 2. Choose file [rAthena-Vibrant-Ink.xml](https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/rAthena-VS2015-Dark.xml)
-
+![vs2015-dark](https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/images/rAthena-UDL-VS2015-Dark.png)
 
 ## Auto-completion
 ### Coverage

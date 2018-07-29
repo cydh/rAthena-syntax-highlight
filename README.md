@@ -3,9 +3,9 @@
 Notepad++ User-Defined Language for [rAthena](https://github.com/rathena/rathena) NPC scripting.
 1. [Add rAthena User-Defined Language](#add-rathena-user-defined-language)
 2. [Auto-completion](#auto-completion)
-3. [Sources](#sources)
-4. [Groups of Keyword Lists](#groups-of-keyword-lists)
-5. [Function List](#function-list)
+3. [Groups of Keyword Lists](#groups-of-keyword-lists)
+4. [Function List](#function-list)
+5. [Sources](#sources)
 
 ## Add rAthena User-Defined Language
 You have to choose one of these options. If you want to change, remove the existing 'rathena' language
@@ -20,59 +20,57 @@ If you are using dark-themed background, in this case is **Vibrant Ink** (one of
 2. Choose file [rAthena-Vibrant-Ink.xml](https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/rAthena-Vibrant-Ink.xml)
 
 ### Dark Theme - VS2015-Dark
-If you are using dark-themed background, in this case is **VS2015-Dark** from [VS2015-Dark-Npp](https://github.com/Ludomancer/VS2015-Dark-Npp)
+If you are using dark-themed background, in this case is **VS2015-Dark** from [VS2015-Dark-Npp](https://github.com/cydh/VS2015-Dark-Npp/blob/cydh-devel/VS2015-Dark.xml)
 1. Open your Notepad++ and go to the Language > Define your language... > Import
 2. Choose file [rAthena-Vibrant-Ink.xml](https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/rAthena-VS2015-Dark.xml)
 
 
 ## Auto-completion
- - Copy an APIs/[rathena.xml](https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/APIs/rathena.xml) file to Notepad++ installation folder `Path\to\Notepad++\plugins\APIs\`.
- - Open menu Settings > Preferences... > Auto-Completion tab, check "Enable auto-completion on each input".
- - Restart Notepad++.
-
-
-## Sources:
- - [rAthena Script Commands](https://github.com/rathena/rathena/blob/1d88575f90b5f572cffba4a361f3028003008ffb/doc/script_commands.txt)
- - [rAthena Constants: db](https://github.com/rathena/rathena/blob/1d88575f90b5f572cffba4a361f3028003008ffb/db/const.txt)
- - [rAthena Constants: script_constants.hpp](https://github.com/rathena/rathena/blob/1d88575f90b5f572cffba4a361f3028003008ffb/src/map/script_constants.hpp)
+### Coverage
+Because there are many things can be added as rAthena auto-completion, for now the auto-completion list only for
+* All script commands
+* Mapflags
+* Player's parameters
+* Clif send type, example usage in `announce` such BC_ALL
+* Item bonuses
+* Months and days
+* Default event labels
+### Installation
+1. Copy an APIs/[rathena.xml](https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/APIs/rathena.xml) file to Notepad++ installation folder `Path\to\Notepad++\plugins\APIs\`.
+2. Open menu Settings > Preferences... > Auto-Completion tab, check "Enable auto-completion on each input".
+3. Restart Notepad++.
 
 ## Groups of Keyword Lists
 ### 1st Group
-Color: 0000FF
-* All script commands except
-  * Flow control: if else switch case do while for
-  * Most usage commands: next close close2 close3 menu select callsub callfunc
+* All script commands **except**
+  * Flow control: if else switch case default break for do while function end return
+  * Most usage script command as NPC dialog: next close close2 close3
 
 ### 2nd Group
-Color: 0080C0
 * Variable with scope: @ . .@ \'
 
 ### 3rd Group
-Color: FF8040
 * Variable with scope: $ $@ # ##
 
 ### 4th Group
-Color: FF0000
 * Keywords using prefix for common labels and functions: On F_ S_ L_
 
 ### 5th Group
-Color: 800040
-* Most usage commands to make clear the block: next close close2 close3 menu select callsub and callfunc
+* Mapflags: Mapflag identifier from doc/mapflags.txt
+* NPC identifier: script shop cashshop marketshop itemshop pointshop duplicate mapflag boss_monster warp warp2
 
 ### 6th Group
-Color: FF0080
 * All constants that grouped by prefix identifiers
-* Item Bonuses constants
 
 ### 7th Group
-Color: FF0080
 * All constants that are not grouped by prefix identifier
+* Item Bonuses constants
 * Constants of NPC names (if only rAthena's script use `JT_` in script, this is not necessary)
 
 ### 8th Group
-Color: FF0080
 * Flow control: if else switch case default break for do while function end return
-* Mapflags: Mapflag identifier from doc/mapflags.txt
+* Most usage script command as NPC dialog: next close close2 close3
+* `true` and `false`
 
 ## Function List
 Script/NPC file that loaded with rAthena UDL will be parsed by NPP functionList as
@@ -107,5 +105,10 @@ For mapflags, the Class-like group will have structure
 3. If you don't have rAthena UDL, you can make dummy UDL. Make sure the UDL name is **rathena** lowercase.
 4. Restart Notepad++
 5. Select the NPC/script file that you think as rAthena script, set the Language > rathena.
+
+## Sources:
+ - [rAthena Script Commands](https://github.com/rathena/rathena/blob/1d88575f90b5f572cffba4a361f3028003008ffb/doc/script_commands.txt)
+ - [rAthena Constants: db](https://github.com/rathena/rathena/blob/1d88575f90b5f572cffba4a361f3028003008ffb/db/const.txt)
+ - [rAthena Constants: script_constants.hpp](https://github.com/rathena/rathena/blob/1d88575f90b5f572cffba4a361f3028003008ffb/src/map/script_constants.hpp)
 
 Happy editing.

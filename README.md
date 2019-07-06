@@ -108,8 +108,8 @@ For mapflags, the Class-like group will have structure
 ### Adding Function List
 1. Find functionList.xml in your Notepad++ installation directory (it can be under `C:\Program Files\Notepad++` or `%USER%\AppData\Roaming\Notepad++` depends on installation setup)
 2. Read the instructions inside [functionList.xml](https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/NPPFunctionList/functionList.xml). **DO NOT OVERWRITE YOUR LOCAL FILE**
-3. The result will be like (here for declaration)[https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/NPPFunctionList/functionList.xml.fullnpp766#L104]
-4. and (here for definition)[https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/NPPFunctionList/functionList.xml.fullnpp766#L1391]
+3. The result will be like [here for declaration](https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/NPPFunctionList/functionList.xml.fullnpp766#L104-L107)
+4. and [here for definition](https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/NPPFunctionList/functionList.xml.fullnpp766#L1391-L1432)
 5. If you don't have rAthena UDL, you can make dummy UDL. Make sure the UDL name is **rathena** lowercase.
 6. Restart Notepad++
 7. Select the NPC/script file that you think as rAthena script, set the Language > rathena.

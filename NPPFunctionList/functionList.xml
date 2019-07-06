@@ -260,19 +260,19 @@ http://notepad-plus-plus.org/features/function-list.html
 			<parser id="rathena_function" displayName="NPC Script" commentExpr="(/\*.*\*/)">
 				<!-- NPC Scripts -->
 				<classRange
-					mainExpr="^([\w_-]+[^\t]*\tscript\t([^\t]*)\t[^\{]*\{)$"
+					mainExpr="^([\w_-]+[^\t]*)\tscript\t([^\t]*)\t[^\{]*\{"
 					openSymbole = "\{"
 					closeSymbole = "\}"
 					displayMode="node">
 					<className>
-						<nameExpr expr="(script\t([^\t]+))"/>
+						<nameExpr expr="script\t([^\t]+)"/>
 						<nameExpr expr="\t([^\t]+)"/>
 					</className>
 					<function
-						mainExpr="(^[\s]*((On[^:]*:)|(function [^ ]* \{))[\r\n])|(script\t[^\t]*\t)">
+						mainExpr="(^[\s]*((On\w+:)|(function[\s\t][^\s\t]+[\s\t]\{))[\r\n])|(script\t[^\t]+\t)">
 						<functionName>
-							<funcNameExpr expr="(On[^:]*)|(function [^ ]* )|(script\t[^\t]*\t)"/>
-							<funcNameExpr expr="(On[^:]*)|(function [^ ]* )|(\t[^\t]*\t)"/>
+							<funcNameExpr expr="(On\w+:)|function[\s\t](\w+)|(script\t[^\t]+\t)"/>
+							<funcNameExpr expr="(On\w+)|function[\s\t](\w+)|\t([^\t]+)\t"/>
 						</functionName>
 					</function>
 				</classRange>

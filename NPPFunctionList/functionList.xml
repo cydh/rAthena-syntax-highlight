@@ -42,6 +42,8 @@ http://notepad-plus-plus.org/features/function-list.html
 		-->
 			<!-- Function List for "rathena" UDL -->
 			<association userDefinedLangName="rathena" id="rathena_function"/>
+			<!-- Copy/Save as rathena UDL with name rathena_script_doc, set your script_commands.txt's language to rathena_script_doc -->
+			<association userDefinedLangName="rathena_script_doc" id="rathena_script_doc"/>
 		</associationMap>
 		<parsers>
 
@@ -285,6 +287,16 @@ http://notepad-plus-plus.org/features/function-list.html
 					<className>
 						<nameExpr expr="(^[\w_-]+[^\t]*\t(mapflag))|((duplicate\([^\)]+\)|monster|(point|market|cash|item)?shop|warp2?))"/>
 					</className>
+				</function>
+			</parser>
+
+			<parser id="rathena_script_doc" displayName="Script Commands" commentExpr="(//[^\r\n]+|^\*Name)">
+				<function
+					mainExpr="^\*([a-z])([\w\-]+)([^ \(;])([\w\-\{\}]*)([^\r\n]+)$"
+					displayMode="$functionName">
+					<functionName>
+						<nameExpr expr="\w([\w\-]+)([^ \(;])([\w\-\{\}]*)([^\r\n]+)$"/>
+					</functionName>
 				</function>
 			</parser>
 		</parsers>

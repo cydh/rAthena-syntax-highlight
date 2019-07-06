@@ -99,6 +99,12 @@ For mapflags, the Class-like group will have structure
 |- <mapflag1>
 |- <mapflag2>
 ```
+#### Function List for NPC Script file
+![rathena-funclist-npc](https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/images/rathena_function_list_for_npc.png)
+
+#### Function List for NPC doc/script_commands.txt
+![rathena-funclist-doc](https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/images/rathena_function_list_for_script_doc.png)
+
 ### Adding Function List
 1. Find functionList.xml in your Notepad++ installation directory (it can be under `C:\Program Files\Notepad++` or `%USER%\AppData\Roaming\Notepad++` depends on installation setup)
 2. **Better** just add the added lines from [rathena-functionList.diff](https://github.com/cydh/rAthena-syntax-highlight/blob/cydh-devel/NPPFunctionList/rathena-functionList.diff)
